@@ -7,7 +7,7 @@
     "clean": "rimraf build",
     "build": "tsc",
     "dev": "ts-node-dev --respawn src/index.ts",
-    "start": "node public/index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Juan Sebastian Müller Rueda",
