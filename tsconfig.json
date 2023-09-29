@@ -9,6 +9,6 @@
     "strict": true,
     "typeRoots": ["node_modules/@types/"]
   },
-  "include": ["./src/**/*.ts", "src/utils"],
+  "include": ["./**/*.ts", "utils"],
   "exclude": ["node_modules/**/*"]
 }
