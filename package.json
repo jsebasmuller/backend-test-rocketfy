@@ -10,6 +10,12 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "vercel-sapper"
+    }
+  ],
   "author": "Juan Sebastian Müller Rueda",
   "dependencies": {
     "body-parser": "^1.20.2",
