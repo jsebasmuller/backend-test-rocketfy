@@ -1,6 +1,6 @@
-import { Server } from './server';
+import { Server } from './src/server';
 require('dotenv').config()
-import './config/database';
+import './src/config/database';
 
 const server = new Server();
 server.start();
