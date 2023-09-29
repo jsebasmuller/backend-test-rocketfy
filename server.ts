@@ -1,5 +1,4 @@
 import express, { Application } from 'express';
-import helmet from 'helmet';
 import morgan from 'morgan';
 import productRouter from './routes/product-routes';
 import bodyParser from 'body-parser';
@@ -19,7 +18,6 @@ export class Server {
         this.app.use(morgan('dev'));
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({extended:false}));
-        this.app.use(helmet());
         const cors = process.env.HOST ?? '*';
         this.app.use((req, res, next) => {
             res.header('Access-Control-Allow-Origin', cors);
