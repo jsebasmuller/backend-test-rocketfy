@@ -2,12 +2,12 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Api RESTful de reto dev fullstack rocketfy ",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "clean": "rimraf build",
     "build": "tsc",
-    "dev": "ts-node-dev --respawn index.ts",
-    "start": "node index.js",
+    "dev": "ts-node-dev --respawn app.ts",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Juan Sebastian Müller Rueda",
