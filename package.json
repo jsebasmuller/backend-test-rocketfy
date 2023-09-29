@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Api RESTful de reto dev fullstack rocketfy ",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
     "build": "tsc",
