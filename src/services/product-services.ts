@@ -10,7 +10,7 @@ export async function createProduct(productDTO: ProductDTO): Promise<ProductDTO>
 export async function getById(id: string): Promise<ProductDTO | null> {
     const product = await Product.findById(id);
     if (product) {
-        return product.toObject();
+        return product as ProductDTO;
     } 
     return null
 }
