@@ -16,8 +16,8 @@ export class Server {
         this.app.set('port', process.env.PORT ?? 3000);
         //middlewares
         this.app.use(morgan('dev'));
-        this.app.use(bodyParser.json());
-        this.app.use(bodyParser.urlencoded({extended:false}));
+        this.app.use(bodyParser.json({limit: '50mb'}));
+        this.app.use(bodyParser.urlencoded({extended:false, limit: '50mb'}));
         const cors = process.env.HOST ?? '*';
         this.app.use((req, res, next) => {
             res.header('Access-Control-Allow-Origin', cors);
